@@ -1,15 +1,86 @@
 
+.app-shell {
+  --surface: #202124;
+  --surface-raised: #292a2d;
+  --surface-deep: #17181a;
+  --text-primary: #f5f5f5;
+  --text-muted: #a8a8ad;
+  --accent: #e53935;
+  --accent-hover: #ff514d;
+  background: var(--surface);
+  color: var(--text-primary);
+}
+
 .hero-section {
-  background: linear-gradient(135deg, #0f766e 0%, #155e75 52%, #312e81 100%);
+  background: linear-gradient(135deg, #252629 0%, #202124 58%, #361d1d 100%);
+  border-bottom: 1px solid rgba(229, 57, 53, 0.25);
 }
 
 .navbar-theme {
-  background: linear-gradient(90deg, #312e81 0%, #155e75 55%, #0f766e 100%);
+  background: rgba(23, 24, 26, 0.96);
+  border-bottom: 1px solid rgba(229, 57, 53, 0.3);
+  backdrop-filter: blur(12px);
 }
 
 .navbar-theme .nav-link:hover,
 .navbar-theme .nav-link.active {
-  color: #fbbf24;
+  color: var(--accent-hover);
+}
+
+.navbar-theme .navbar-brand {
+  letter-spacing: -0.03em;
+}
+
+.btn-accent {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+}
+
+.btn-accent:hover,
+.btn-accent:focus {
+  background: var(--accent-hover);
+  border-color: var(--accent-hover);
+  color: #fff;
+}
+
+.btn-outline-accent {
+  border-color: var(--accent);
+  color: var(--accent-hover);
+}
+
+.btn-outline-accent:hover,
+.btn-outline-accent:focus {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+}
+
+.app-footer {
+  background: var(--surface-deep);
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+:host ::ng-deep .card {
+  background: var(--surface-raised);
+  color: var(--text-primary);
+}
+
+:host ::ng-deep .text-muted {
+  color: var(--text-muted) !important;
+}
+
+:host ::ng-deep .form-control {
+  background: #1d1e20;
+  border-color: #414247;
+  color: var(--text-primary);
+}
+
+:host ::ng-deep .form-control:focus {
+  background: #1d1e20;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 0.2rem rgba(229, 57, 53, 0.2);
+  color: var(--text-primary);
 }
 
 .carousel-image {
