@@ -1,6 +1,15 @@
 
 .hero-section {
-  background: linear-gradient(135deg, #dc3545 0%, #b02a37 100%);
+  background: linear-gradient(135deg, #0f766e 0%, #155e75 52%, #312e81 100%);
+}
+
+.navbar-theme {
+  background: linear-gradient(90deg, #312e81 0%, #155e75 55%, #0f766e 100%);
+}
+
+.navbar-theme .nav-link:hover,
+.navbar-theme .nav-link.active {
+  color: #fbbf24;
 }
 
 .carousel-image {
